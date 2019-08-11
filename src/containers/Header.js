@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { withRouter } from 'react-router-dom';
 import {
   Grid,
   MenuItem,
@@ -12,6 +13,7 @@ import {
 } from '@material-ui/core/styles';
 import logo from '../static/logo.png';
 import BetSlip from '../components/BetSlip';
+import BackButton from '../components/BackButton';
 
 function Header (props) {
   const { eventType, odsDisplay, changeOdsDisplay } = props;
@@ -19,10 +21,16 @@ function Header (props) {
 
   return (
     <Grid container={true} className='Header'>
+      {
+        props.history.location.pathname !== '/' &&
+        <Grid item={true} xs={1}>
+          <BackButton onClick={() => props.history.goBack()} />
+        </Grid>
+      }
       <Grid item={true} xs={3}>
         <Typography variant='h6' noWrap={true}>{eventType}</Typography>
       </Grid>
-      <Grid item={true} xs={6}>
+      <Grid item={true} xs={5}>
         <img alt='SkyBet' className='Logo' src={logo} />
       </Grid>
       <Grid item={true} xs={3}>
@@ -62,4 +70,4 @@ const useStyles = makeStyles(() =>
   }),
 );
 
-export default Header;
+export default withRouter(Header);

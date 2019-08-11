@@ -35,7 +35,7 @@ function EventItem(props) {
         getMarketOutcome(eventItem.marketData[0].outcomes);
       }
     },
-    [eventItem]
+    [eventItem, getMarketOutcome]
   );
 
   const toggleMarket = (e) => {

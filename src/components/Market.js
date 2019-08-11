@@ -33,7 +33,7 @@ function Market(props) {
         getMarketOutcome(market.outcomes);
       }
     },
-    [market]
+    [market, clickable, getMarketOutcome]
   );
 
   const toggleMarket = (e) => {
@@ -105,7 +105,7 @@ function Market(props) {
         </Grid>
       );
     }
-    if (market.type = 'win-draw-win') {
+    if (market.type === 'win-draw-win') {
       return (
         <Grid container={true} direction='row'>
           {

@@ -31,6 +31,7 @@ export default (newOptions) => {
           handler(store, action);
         } catch (err) {
           dispatch(appActions.error(action, err));
+          // eslint-disable-next-line
           throw {type: actionType, err};
         }
       }

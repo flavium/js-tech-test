@@ -31,6 +31,7 @@
 .EventContainer {
   margin: 10px 0 10px 0!important;
   align-items: center;
+  cursor: pointer;
 }
 .EventContainerDetails {
   display: flex;
@@ -180,31 +181,6 @@
   max-width: 100px!important;
   border: solid #153f8e thin!important;
 }
-
-
-
-.UsersContainer {
-  max-width: 1000px;
-}
-.Avatar {
-  margin: 10px;
-  width: 60px!important;
-  height: 60px!important;
-}
-.UserItem {
-  padding: 6px;
-}
-.UserCard {
-  min-width: 250px;
-}
-.UserInfoGrid {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.InfoIcon {
-  margin: 5px;
-}
-.InfoAnchor {
-  text-decoration: none;
+.BackButton {
+  color: aliceblue!important;
 }
