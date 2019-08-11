@@ -1,0 +1,61 @@
+{
+  "name": "js-tech-test",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": ".",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "1.2.18",
+    "@fortawesome/free-solid-svg-icons": "5.8.2",
+    "@fortawesome/react-fontawesome": "0.1.4",
+    "@material-ui/core": "4.1.0",
+    "async-wait-until": "1.2.4",
+    "classnames": "2.2.6",
+    "enzyme": "3.10.0",
+    "enzyme-adapter-react-16": "1.14.0",
+    "enzyme-to-json": "^3.3.5",
+    "fetch-mock": "^7.3.6",
+    "history": "^4.9.0",
+    "install": "0.13.0",
+    "lodash": "4.17.15",
+    "moment": "2.24.0",
+    "node-fetch": "2.6.0",
+    "prop-types": "15.7.2",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-redux": "7.1.0",
+    "react-router-dom": "5.0.1",
+    "react-scripts": "3.0.1",
+    "redux": "4.0.4",
+    "redux-thunk": "2.3.0"
+  },
+  "scripts": {
+    "start_daemon": "open --background -a Docker && while ! docker system info > /dev/null 2>&1; do sleep 1; done",
+    "test_server": "if [ $(docker inspect -f '{{.State.Running}}' js-tech-test_api_1) = true ]; then echo \"Server its running.\"; else yarn run start_server; fi",
+    "start_server": "docker-compose up -d",
+    "start_reactapp": "react-scripts start",
+    "start": "yarn run start_daemon; yarn run test_server; yarn start_reactapp",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  }
+}

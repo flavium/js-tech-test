@@ -1,0 +1,210 @@
+.App {
+  text-align: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+.Container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+.CircularProgress {
+  align-self: stretch;
+}
+.MainContainer {
+  width: 600px;
+}
+.Header {
+  display: flex;
+  height: 60px;
+  padding-top: 35px;
+  color: aliceblue;
+  align-content: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #153f8e;
+}
+.Logo {
+  height: 30px;
+}
+.EventContainer {
+  margin: 10px 0 10px 0!important;
+  align-items: center;
+}
+.EventContainerDetails {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px 0 10px 0!important;
+  padding: 15px;
+  background-color: #112654;
+}
+.EventTypeName {
+  margin: 5px 0 5px 0!important;
+  color: #153f8e;
+  background: linear-gradient(90deg, rgba(21,63,141,1) 0%, rgba(255,255,255,1) 78%, rgba(255,255,255,1) 100%);
+}
+.TimeContainer {
+  color: #2a8c15;
+  font-weight: 600;
+}
+.TimeContainerDetails {
+  display: flex;
+  color: #fff;
+}
+.ScoreContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+.ScoreChip {
+  border-radius: 5px!important;
+  color: aliceblue!important;
+  background-color: #153f8e!important;
+}
+.ScoreChipDetails {
+  border-radius: 0px!important;
+  color: #112654!important;
+  font-weight: 600;
+  background-color: #ffffff;
+}
+.CompetitorDetails {
+  color: #ffffff;
+}
+.CompetitorDetailsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 10px 0!important;
+}
+.EventTypeNameDetails {
+  color: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  margin: 10px 0 0 0!important;
+}
+.DividerDetails {
+  background-color: rgba(255, 255, 255, 0.3)!important;
+}
+.OddsDisplaySelector {
+  color: aliceblue;
+}
+.MarketButton {
+  color: #153f8e!important;
+  min-width: 35px!important;
+}
+.EventPrimaryMarketContainer {
+  width: 100%;
+}
+.EventPrimaryMarket {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: inherit;
+}
+.EventDetailsContainer {
+  align-items: flex-start;
+  justify-content: center;
+}
+.OutcomePrice {
+  color: red;
+  font-weight: 600;
+}
+.OutcomeButton {
+  width: 100%;
+  min-height: 65px;
+  border: solid #ccdeff !important;
+  border-radius: 15px;
+  border-width: 5px;
+}
+.OutcomesContainer {
+  width: 100%;
+}
+.StandardOutcomeContainer {
+  display: flex;
+}
+.StandardOutcomeName {
+  padding: 15px;
+  display: flex;
+  align-items: flex-start;
+}
+.CorrectScoreOutcomeName {
+  background-color: #b0d4ff;
+}
+.OutcomeButtonContainer {
+  padding: 15px;
+}
+.OddsDisplaySelector {
+  position: relative;
+  bottom: 10px;
+}
+.BetSlipButton {
+  position: absolute;
+  bottom: 10px;
+  color: aliceblue!important;
+  background-color: #112654!important;
+}
+.BetSlipContainer {
+  width: 400px!important;
+  padding: 15px;
+}
+.BetSlipTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ClearBetSlipContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+.ActiveBetsContainer {
+  border: solid #153f8e thin;
+  padding: 10px;
+}
+.BetTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #153f8e;
+  color: aliceblue;
+}
+.BetRemoveButton {
+  color: aliceblue!important;
+}
+.BetInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px!important;
+  color: #153f8e;
+}
+.BetAmount {
+  max-width: 100px!important;
+  border: solid #153f8e thin!important;
+}
+
+
+
+.UsersContainer {
+  max-width: 1000px;
+}
+.Avatar {
+  margin: 10px;
+  width: 60px!important;
+  height: 60px!important;
+}
+.UserItem {
+  padding: 6px;
+}
+.UserCard {
+  min-width: 250px;
+}
+.UserInfoGrid {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.InfoIcon {
+  margin: 5px;
+}
+.InfoAnchor {
+  text-decoration: none;
+}
